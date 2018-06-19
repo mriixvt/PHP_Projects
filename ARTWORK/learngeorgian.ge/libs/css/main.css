@@ -1,0 +1,210 @@
+@font-face {
+    font-family: Courier_Bold;
+    src: url(fonts/Courier_New.ttf);
+}
+
+@font-face {
+    font-family: BPG Arial;
+    src: url(fonts/bpg_arial.ttf);
+}
+
+@font-face {
+    font-family: cambria;
+    src: url(fonts/Cambria.ttf);
+}
+
+@font-face {
+    font-family: railway;
+    src: url(fonts/Fenix_Std.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 13px;
+    -moz-font-size: 14px;
+    -ms-font-size: 14px;
+    -o-font-size: 14px;
+    font-family: "BPG Arial", sans-serif;
+    -moz-font-family: "BPG Arial", sans-serif;
+    -ms-font-family: "BPG Arial", sans-serif;
+    -o-font-family: "BPG Arial", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+a:active {
+    color: #333;
+    text-decoration: none;
+}
+
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #4c648a;
+    border-style: groove;
+}
+
+.green {
+    color: #2ac260;
+}
+
+.red {
+    color: #C5343B;
+}
+
+.orange {
+    color: #EA7639;
+}
+
+.yellow {
+    color: #FAD36A;
+}
+
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid #bbb;
+    height: 50px;
+}
+
+#header {
+    max-width: 1280px;
+
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.header_logo {
+    font-family: railway;
+    font-size: 22px;
+    color: #333;
+}
+
+#contents {
+    transition: all 0.7s !important;
+    -webkit-transition: all 0.7s !importan;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-indent: 1.5em;
+}
+#main_about {
+    margin-top: 20px;
+}
+
+.main_about_text {
+    min-width: 700px;
+    padding-right: 30px;
+    font-size: 17px;
+    line-height: 1.7em;
+    font-family: cambria;
+}
+.main_about_img {
+    width: 100%;
+}
+.main_about_img img {
+    width: 250px;
+    border-radius: 4px;
+}
+.main_about_imgd {
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: cambria;
+}
+
+.main_header {
+    font-size: 18px;
+    background: linear-gradient(to right, rgba(46, 81, 112, 0.89), #fff);
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.main_header2 {
+    font-size: 18px;
+    background: linear-gradient(to right, rgba(174, 92, 50, 0.58), #fff);
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+#main_desc {
+    margin-top: 10px;
+}
+#main_desc p  {
+    font-size: 17px;
+    line-height: 1.7em;
+    font-family: cambria;
+    margin-bottom: 50px;
+}
+
+#fees {
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#fees td:nth-child(1) {
+   border-right: 1px solid #fff;
+}
+#fees td:nth-child(2) {
+   border-right: 1px solid #fff;
+}
+.fees {
+    width: 200px;
+    text-align: center;
+    padding-top: 15px;line-height: 50px;
+    
+}
+.fees span {
+    font-size: 16px;
+    display: block;
+    font-weight: bold;
+   
+}
+.fees fee {
+    display: block;
+   
+    
+    font-size: 15px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    /* background-color: #efefef; */
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 10px;
+    
+}

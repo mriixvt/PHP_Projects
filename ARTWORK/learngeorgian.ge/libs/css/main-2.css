@@ -1,0 +1,744 @@
+@font-face {
+    font-family: l2;
+    src: url(fonts/l2.ttf);
+}
+@font-face {
+    font-family: BPG Arial;
+    src: url(fonts/bpg_arial.ttf);
+}
+
+@font-face {
+    font-family: cambria;
+    src: url(fonts/Cambria.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #efe6d9;
+    font-size: 13px;
+    -moz-font-size: 14px;
+    -ms-font-size: 14px;
+    -o-font-size: 14px;
+    font-family: "BPG Arial", sans-serif;
+    -moz-font-family: "BPG Arial", sans-serif;
+    -ms-font-family: "BPG Arial", sans-serif;
+    -o-font-family: "BPG Arial", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+    color: #efe6d9;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+a:hover {
+    color: #efe6d9;
+    text-decoration: none;
+}
+a:active {
+    color: #efe6d9;
+    text-decoration: none;
+}
+a:link {
+     color: #efe6d9;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #efe6d9;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #4c648a;
+    border-style: groove;
+}
+.green {
+    color: #2ac260;
+}
+
+.red {
+    color: #C5343B;
+}
+
+.orange {
+    color: #EA7639;
+}
+
+.yellow {
+    color: #FAD36A;
+}
+.a5 {
+    font-size: 16px;
+}
+
+.web-color {
+    background-color: #121517;
+    color: #687C85;
+    padding: 2px 4px;
+}
+
+.server-color {
+    background-color: #2ac260;
+    color: #121517;
+    padding: 2px 4px;
+}
+
+    .hb-online-circle {
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 10px;
+        width: 10px;
+        background-color: #2ac260;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .hb-offline-circle {
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 10px;
+        width: 10px;
+        background-color: #C5343B;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .hb-onlygm-circle {
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 10px;
+        width: 10px;
+        background-color: #EA7639;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .hb-test-circle {
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 10px;
+        width: 10px;
+        background-color: #FAD36A;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .blink {
+        animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0.4;
+        }
+    }
+
+    .hb-right {
+        text-align: right;
+    }
+
+    .votewebs {
+        position: fixed;
+        z-index: 99999;
+        margin-top: 20%;
+        background: rgba(0, 0, 0, 0.6);
+        opacity: 0.5;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+    }
+
+    .votewebs:hover {
+        opacity: 0.9;
+    }
+
+/* DC */
+body {
+    background: url("../img/bg2-p.png") top center no-repeat #262626;
+    background-attachment: fixed;
+    /* linear-gradient(#0b1c2e, #03090e); */
+     
+
+}
+
+/* HEADER */
+
+#header-bar-wrap {
+    background-color: rgba(85, 56, 58, 0.3);
+    height: 50px;
+}
+#header-bar {
+    max-width: 1280px;
+    margin: 0 auto;    
+}
+#header-bar table {
+    vertical-align: middle;
+    line-height: 50px;
+}
+.header-bar-left {
+    width: 100%;
+}
+.header-bar-right {
+    min-width: 300px;
+    text-align: right;
+    position: relative;
+}
+
+.browser-chrome {
+   float: right;
+}
+.browser-chrome:before {
+    content: "\f268";
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 0.6em; /* same as padding-left set on li */
+    margin-right: 10px;
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+.browser-chrome:hover:before {
+    opacity: 1;
+}
+
+
+
+#header-middle-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+#header-middle {
+    margin-top: 50px;
+}
+#header-middle table {
+    width: 100%;
+}
+
+#header-middle-logo {
+    content: url("../img/logo-tr1.png");
+}
+
+
+/* END HEADER */
+
+
+
+/* MAIN  BASIC */
+
+#main-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+   
+}
+
+#main {
+    margin-top: 50px;
+}
+#main table {
+    vertical-align: top;
+}
+
+/* END MAIN  BASIC */
+
+/* MAIN LEFT */
+
+.main-left-menu {
+    min-width: 339px;
+    max-width: 339px;
+    height: 1000px;
+    vertical-align: top;
+    background-color: rgba(35, 22, 26, 0.8);
+    border-bottom: 1px solid rgba(85, 56, 58, 0.8);
+}
+
+.main-left-menu-download {
+    background-color: #422930;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    padding-top: 30px;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-denim-3.png");
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    opacity: 0.7; 
+}
+.main-left-menu-download d1 {
+    font-size: 18px;
+    
+}
+.main-left-menu-download s1 {
+    margin-top: 10px;
+    display: block;
+    font-size: 11px;
+}
+
+.main-left-menu-header {
+    background: rgba(19, 12, 14, 0.8);
+}
+.header-text {
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.form-symbol {
+    content: url("../img/s2.png");
+    width: 50px;
+}
+.main-left-menu-content {
+    background-color: rgba(35, 22, 26, 0.8);
+    padding: 10 40px;
+}
+
+.main-left-menu-list {
+    position: relative;
+}
+.main-left-menu-list a:hover {
+    text-decoration: underline;
+}
+.main-left-menu-list li{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.main-left-menu-list li:before {
+    content: "\f096";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 0.6em; /* same as padding-left set on li */
+    margin-right: 10px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg); /* Standard syntax */
+    transition: all 1s;
+    transition-timing: ease-in-out;
+    color: rgba(85, 56, 58, 1);
+}
+.main-left-menu-list li:hover:before {
+/* #B24347; */
+    color: #fff;
+    content: "\f0c8";
+    transform: rotate(135deg);
+}
+
+.shape {
+    content: url("../img/shape.png");
+    width: 300px;
+}
+
+/* END MAIN LEFT */
+
+/* MAIN */
+.main-content-wrap {
+    margin-left: 10px;
+    width: 100%;
+    vertical-align: top;
+    background-color: rgba(85, 56, 58, 0.6);
+        
+}
+
+
+.main-top-content-wrap {
+    background-color: rgba(54, 36, 37, 0.6);
+    height: 230px;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+}
+.main-top-content-wrap td:nth-child(1) {
+    background: url("../img/lineage-banner1.png");
+    width: 313px;
+    opacity: 1;
+    transition: all 1s;
+}
+.main-top-content-wrap td:nth-child(1):hover {
+    opacity: 1;
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+.main-top-content-wrap td>a {
+    font-size: 18px;
+    opacity: 1;
+}
+
+
+.main-content {
+    background-color: rgba(85, 56, 58, 0.1);
+    padding: 20px 30px; 
+    transition: all 1s;
+    border-bottom: 1px solid rgba(85, 56, 58, 0.8);
+    border-right: 1px solid rgba(85, 56, 58, 0.8);
+}
+.main-content:hover {
+    background-color: rgba(85, 56, 58, 0.6);
+    padding: 20px 30px; 
+}
+.main-content table {
+    width: 100%;
+}
+.main-content tr{
+    
+}
+.main-content td {
+    
+}
+.main-post-header-wrap {
+    margin-bottom: 10px;
+    line-height: 50px;
+    padding-bottom: 20px;
+    
+}
+.main-post-header {
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+} 
+.main-post-header:before {
+    content: "";
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 25px;
+    width: 0.6em; /* same as padding-left set on li */
+    margin-right: 20px;
+    transition: all 0.5s;
+    opacity: 0.7;
+}
+
+.form-symbol-post {
+    content: url("../img/yz.png");
+    width: 70px;
+    float: right;
+    padding-left: 10px;
+}
+.main-post-text-wrap {
+    
+}
+.main-post-img {
+    margin-right: 30px;
+    max-width: 200px;
+   
+}
+.main-post-img img {
+    max-width: 150px;
+    
+}
+.main-post-text {
+    vertical-align: top;
+    width: 941px;
+    padding-left: 20px;
+    color: #ebebeb;
+    font-size: 13px;
+}
+.main-post-header-date {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 200px;
+    font-size: 12px;
+}
+/* ##### */
+
+a:hover {
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+}
+
+.main-content-right {
+    vertical-align: top;
+    min-width: 270px;
+}
+
+
+.main-content-connect {
+    width: 941px;
+    background-color: rgba(85, 56, 58, 0.1);
+    padding: 20px 30px; 
+    transition: all 0.5s;
+    margin-top: 50px;
+}
+.main-content-connect table {
+    margin: 0 auto;
+}
+.main-content-connect td{
+    max-width: 100%;
+    text-align: center;
+}
+.main-content-connect-up {
+    min-width: 250px;
+}
+.main-content-connect-up a{
+    background: url("https://www.transparenttextures.com/patterns/dark-denim-3.png"), linear-gradient(#0b1c2e, #03090e);
+    padding: 20px 70px;
+    box-shadow: 0px 0px 29px 1px rgba(19, 12, 14, 0.8);
+    text-align: center;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main-content-connect-in {
+    min-width: 250px;
+}
+.main-content-connect-in a{
+    background: url("https://www.transparenttextures.com/patterns/dark-denim-3.png"), linear-gradient(#0b1c2e, #03090e);
+    padding: 20px 70px;
+    box-shadow: 0px 0px 29px 1px rgba(19, 12, 14, 0.8);
+    text-align: center;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main-content-connect-down {
+    min-width: 250px;
+}
+.main-content-connect-down a{
+    background: url("https://www.transparenttextures.com/patterns/dark-denim-3.png"), linear-gradient(#0b1c2e, #03090e);
+    padding: 20px 40px;
+    box-shadow: 0px 0px 29px 1px rgba(19, 12, 14, 0.8);
+    text-align: center;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main-content-connect-com {
+    display: block;
+    margin-top: 50px;
+    
+    float: right;
+}
+.main-content-connect-com td {
+    color: rgba(255, 255, 255, 0.4);
+}
+/* END MAIN */
+
+/* FOOTER */
+
+
+#footer-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 300px;
+    background: rgba(19, 12, 14, 0.8);
+}
+
+#footer {
+    /* vertical-align: top; */
+    text-align: center;
+}
+
+
+
+#footer-bar-wrap {
+    background-color: rgba(85, 56, 58, 0.3);
+    height: 50px;
+    margin-top: 200px;
+}
+#footer-bar {
+    max-width: 1280px;
+    margin: 0 auto;    
+}
+#footer-bar table {
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.footer-bar-left {
+    font-family: cambria;
+    font-size: 14px;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.footer-bar-right {
+    color: #C18D41;
+    font-family: l2;
+    font-size: 26px;
+    vertical-align: top;
+    min-width: 371px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.nsoft {
+    content: url("../img/ncsoft-logo.png");   
+    width: 110px;
+    float: left;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+/* END FOOTER */
+
+
+
+/*  PLAYER BAR  */
+
+.player-bar {
+    width: 100%;
+}
+.leftbar-online{
+   
+}
+.player-bar table {
+    width: 100%;
+}
+.player-bar td {
+    padding: 5px;
+}
+.player-bar td:nth-child(1){
+    border-right: 1px dotted rgba(255, 255, 255, 0.1);
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+    width: 100px;
+}
+.player-bar td:nth-child(2){
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+.player-bar name {
+    
+}
+.player-bar lastaccess {
+    display: block;
+}
+.player-bar lastaccess n {
+    color: 	#0084B4;
+}
+.player-bar lastip n {
+    color: 	#0084B4;
+}
+
+.download-user-data {
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px dotted rgba(255, 255, 255, 0.1);
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+}
+.download-user-data a {
+    color: #C5343B;
+}
+.player-bar-header {
+    background-color: brown;
+    padding: 10px;
+    border-radius: 7px;
+}
+.player-bar-logout {
+    width: 100px;
+    float: right;
+    margin-top: 20px;
+}
+.player-bar-logout p{
+    background: url("https://www.transparenttextures.com/patterns/green-fibers.png"), linear-gradient(#0b1c2e, #03090e);
+    padding: 10px;
+    width: 100px;
+    box-shadow: 0px 0px 29px 1px rgba(19, 12, 14, 0.8);
+    text-align: center;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.player-bar-logout p:hover{
+    background: url("https://www.transparenttextures.com/patterns/green-fibers.png"), linear-gradient(#0b1c2e, #03090e);
+    padding: 10px;
+    width: 100px;
+    box-shadow: 0px 0px 29px 1px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+/* END PLAYER BAR */
+
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    margin: 0 auto;
+}
+.popup-bg {
+    background-color:  rgba(35, 22, 26, 0.8);
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    vertical-align: middle;
+    border-top: 3px solid #74c564;
+}
+.popup-bg i {
+    padding: 7px;
+    margin: 10px;
+    display: block;
+    position: relative;
+}
+.modal label {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+
