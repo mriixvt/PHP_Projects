@@ -2,7 +2,6 @@
 <?php require_once("configs/config.php"); ?>
 <html>
 
-
 <head>
     <title> Georgian Learning </title>
     <?php  require_once("inc/links.inc.php") ?>
